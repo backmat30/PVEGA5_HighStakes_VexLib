@@ -4,24 +4,15 @@
 namespace pvegas {
 namespace rtos {
 class ITask {
-public:
+ public:
   virtual ~ITask() = 0;
 
   // starts a task using the provided function and given parameters
-  virtual void start(void (*function)(void *), void *params) = 0;
-
-  // remove the task from the scheduler
-  virtual void remove() = 0;
-
-  // suspends the task
-  virtual void suspend() = 0;
-
-  // resumes the task
-  virtual void resume() = 0;
+  virtual void start(int (*function)(void *), void *params) = 0;
 
   // pauses other tasks until this task is done
   virtual void join() = 0;
 };
-} // namespace rtos
-} // namespace pvegas
+}  // namespace rtos
+}  // namespace pvegas
 #endif
