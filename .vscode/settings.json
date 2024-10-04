@@ -11,6 +11,7 @@
         "vector": "cpp",
         "functional": "cpp",
         "streambuf": "cpp",
-        "tuple": "cpp"
+        "tuple": "cpp",
+        "map": "cpp"
     }
 }
