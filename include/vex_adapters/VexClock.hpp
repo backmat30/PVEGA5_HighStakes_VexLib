@@ -9,9 +9,6 @@
 
 namespace vex_adapters{
     class VexClock : public pvegas::rtos::IClock{
-        private:
-        // timer being wrapped
-        std::unique_ptr<vex::timer> m_timer{};
         public:
         // copy constructor
         VexClock(VexClock& other);
