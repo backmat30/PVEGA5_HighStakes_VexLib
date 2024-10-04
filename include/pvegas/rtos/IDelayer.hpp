@@ -6,7 +6,7 @@ namespace pvegas {
 namespace rtos {
 class IDelayer {
 public:
-  virtual std::unique_ptr<IDelayer> clone() const = 0;
+  virtual std::unique_ptr<IDelayer> clone() = 0;
 
   virtual void delay(uint32_t millis) = 0;
 
